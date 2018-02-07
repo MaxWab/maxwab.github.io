@@ -76,7 +76,9 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>About me</h2>
-            <p>Personal presentation here. MVA master.  Centrale Lille engineer. Link to CV. State center of interest. </p>
+            <p>I am a French student currently enrolled in the master MVA (Mathematics, Computer Vision, and Learning) at École Normale Supérieure Paris-Saclay. Previously, I graduated from École Centrale de Lille, where I followed the DAD (Decision and Data Analysis) specialization. My previous internship was made inside the NeuroPoly laboratory in Montréal, where I worked on semantic segmentation of spinal cord microstructures using convolutional neural networks.<br/>
+
+            My main centers of interest are reinforcement learning and computer vision, but I am passionate by machine learning in general. I am also a strong advocate of open science. You can find my CV <a href="static/cv_WABARTHA.pdf">[here]</a>, and my GitHub account <a href="https://github.com/MaxWab">[here]</a>.</p>
           </div>
         </div>
       </div>
@@ -86,8 +88,8 @@
     <section id="download" class="download-section content-section text-center">
       <div class="container">
         <div class="col-lg-8 mx-auto">
-          <h2>Projects</h2>
-          <h4>AxonDeepSeg</h4>
+          <h2>Recents projects</h2>
+          <h4>AxonDeepSeg (2017)</h4>
             <p>
               AxonDeepSeg is a segmentation software for microscopy data of nerve fibers. It is a CNN using a variation of the U-net architecture to segment microstructures (axon and myelin) from electron microscopy data from the spinal cord. AxonDeepSeg is released as an open-source software (Python, TensorFlow) available online on <a href="https://github.com/neuropoly/axondeepseg">[GitHub]</a>.<br/>
               The project is the result of the collaboration of several people. It is lead by the neuroimagery laboratory <a href="https://www.neuro.polymtl.ca/home">NeuroPoly</a>, from Polytechnique Montréal. I took over the project in May 2017 and worked on it until September 2017 as part of a summer internship.
@@ -96,7 +98,27 @@
             </p>
 
 
-          <h4>Computer Vision project</h4>
+          <h4>Atrous convolutions (2018)</h4>
+            <p>
+              I worked on the use of atrous convolutions in semantic segmentation as part of my class on Object detection and Computer Vision from the master MVA. I leant on the code from my summer open-source project, AxonDeepSeg, and explored the use of atrous convolutions following the conclusions from the <a href="https://arxiv.org/abs/1606.00915">[DeepLab]</a> paper through qualitative and quantitative analysis. <br/>
+
+              I also implemented Atrous Spatial Pyramid Pooling from DeepLab, tried different parameterizations and architectures, and compared the best results with the baseline, AxonDeepSeg.
+            </p>
+
+          <h4>Graph exploration with visibility constraints using bandits (2018)</h4>
+            <p>
+              I worked on a stochastic graph exploration project as a part of my class on <a href="http://researchers.lille.inria.fr/~valko/hp/mva-ml-graphs.php">Graphs in Machine Learning</a> for the Master MVA. With my colleague, we implemented the deterministic NetExp algorithm <a href="https://arxiv.org/abs/1504.06423">[Singla15]</a> for graph exploration under limited visibility constraints. We then derived a new algorithm in the stochastic paradigm, taking ideas from the Full information bandit and the Side-observation bandit settings, and leaning on previous work on the stochastic graph exploration problem. We used an alternative to Thompson Sampling to tackle the exploration/exploitation bias and obtained better results than the other methods.<br/>
+
+              The implementation can't be shared right now, but a readme file is available <a href="https://github.com/MaxWab/CrawlingBandit_public">[here]</a>.
+            </p>
+
+          <h4>Bankruptcy challenge (2017)</h4>
+            <p>
+              Winning algorithm of an in-class Kaggle challenge during my last year in the <a href="http://pierrechainais.ec-lille.fr/Centrale/Option_DAD/Accueil.html">[data analysis specialization]</a> from Centrale.<br/>
+
+              With my colleague, we used an adequate subsampling of the data to face the class imbalance, appropriate normalization, and several optimized xgboost classifiers to obtain our final algorithm. Implementation can be found <a href="https://github.com/MaxWab/BankruptcyChallenge">[here]</a>.
+            </p>
+
 
         </div>
       </div>
